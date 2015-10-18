@@ -1,38 +1,78 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>My first Three.js app</title>
-		<style>
-			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
-		</style>
-	</head>
-	<body>
-		<script src="js/three.min.js"></script>
-		<script>
-			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-
-			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			var cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
-
-			camera.position.z = 5;
-
-			var render = function () {
-				requestAnimationFrame( render );
-
-				cube.rotation.x += 0.1;
-				cube.rotation.y += 0.1;
-
-				renderer.render(scene, camera);
-			};
-
-			render();
-		</script>
-	</body>
+<head>
+	<title>Cornell Engineering World Health</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="cover">
+			<div id="navigation">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container-fluid" style="width:100%;">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<a class="navbar-brand" href="#titlepage"></a>
+						</div>
+						<div class="collapse navbar-collapse" style="float:right;">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">About us</a></li>
+								<li><a href="team.html">Team</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="#sponsor">Sponsor</a></li>
+								<li><a href="contact">Contact us</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<img id="logo" src="misc/templogo.png"/>
+			<img id="top" src="misc/white_timeline.png" />
+		</div>
+		<div id="middle" style="padding: 0px 0px 0px 0px;">
+			<img id="bot" src="misc/black_timeline.png" />
+			<div id="intro" class="container-fluid" style="padding-top: 140px;">
+				<p class="header" style="color:black; font-size:48px;">
+					HAPPY BIRTHDAY THERESA
+				</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p style="text-align:justify; color:black;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at.
+							</p>
+						</div>
+	  				<div class="col-md-6">
+	  					<p style="text-align:justify; color:black;">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at.
+							</p>
+						</div>
+	  			</div>
+				</div>
+			</div>
+		</div>
+		<div id= "block2" class="container">
+			<p class="header" style="color:black; font-size:48px;">
+					HAPPY BIRTHDAY THERESA
+			</p>
+			<p style="text-align:justify; color:black;">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at, lobortis at leo. Morbi dolor turpis, ornare a quam sed, hendrerit tempor dolor. Integer nisi enim, vulputate et tellus nec, euismod luctus dolor. Nullam egestas lacinia auctor. Nunc eros libero, finibus ut semper sit amet, eleifend vitae metus. Maecenas placerat magna risus, eget malesuada est feugiat vitae. Fusce aliquam lorem vitae diam maximus, ut mollis urna laoreet. Aliquam at lorem vitae magna venenatis ultrices a ut odio.
+			</p>
+		</div>
+		<div id="footer">
+		</div>
+	</div>
+</body>
 </html>
