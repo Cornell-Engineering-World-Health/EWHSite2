@@ -4,6 +4,19 @@
   width: 100%;
   position: relative;
   background-color: #E1E3E3;
-  padding: 5% 5% 0 5%;
+  padding: 110px 5% 110px 5%;
 }
 
+#electrical, #supreme {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#elec-wrapper {
+  background-image: url("temp.jpg");
+  background-size: cover;
+}
+
+#cs-wrapper {
+  background-image: url("temp1.jpg");
+  background-size: cover;
+}

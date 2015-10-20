@@ -20,6 +20,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: 1px;
+	color: "black";
 }
 
 #top {
@@ -93,7 +94,7 @@ p {
 	background-color: #E1E3E3;
 }
 
-#block2 {
+#ablock {
 	min-height: 60%;
 	height: auto;
 	width: 100%;
