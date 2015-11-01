@@ -20,3 +20,66 @@
   background-image: url("temp1.jpg");
   background-size: cover;
 }
+
+.modalBio {
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalBio:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalBio > div {
+  width: 50%;
+  min-height: 60%;
+  height: 60%;
+  overflow: scroll;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 30px 13px 30px;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.modalBio > div > p {
+  color:white;
+}
+
+.close {
+  margin-top: 15px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 25px;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  filter: none;
+  opacity: 1;
+}
+
+.close:hover { 
+  background: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
+  filter: none;
+  opacity: 1;
+}
+
+.headshot {
+  width: 40%;
+  float: left;
+  margin-right: 5%;
+}

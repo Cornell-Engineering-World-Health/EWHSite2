@@ -1,0 +1,26 @@
+{ "member" : [
+  {
+    "id" : "bus_kevia",
+    "name" : "Kevia Qu",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Kevia.jpg"
+  },
+  {
+    "id" : "bus_theresa",
+    "name" : "Theresa Cao",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Theresa.jpg"
+  },
+  {
+    "id" : "cs_peaky",
+    "name" : "Peaky Yuter",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Peaky.jpg"
+  },
+  {
+    "id" : "elec_justin",
+    "name" : "Justin Selig",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Justin.jpg"
+  }
+]}
