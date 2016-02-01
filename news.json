@@ -1,0 +1,12 @@
+{ "news" : [
+  {
+    "news_title" : "Cornell EWH Takes over the World",
+    "date" : "January 28, 2016",
+    "news_body" : "All hail your new rulers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus."
+  },
+  {
+    "news_title" : "Cornell EWH Solves Global Warming",
+    "date" : "January 29, 2016",
+    "news_body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus."
+  }
+]}

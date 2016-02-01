@@ -13,4 +13,5 @@ $(document).ready(function() {
       $('.nav.navbar-nav li a').css('font-weight', "700");
     }
   });
+  
 });

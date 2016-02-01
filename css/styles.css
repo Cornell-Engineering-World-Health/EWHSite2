@@ -1,4 +1,8 @@
-.navbar.navbar-default.navbar-fixed-top {
+.navbar {
+	border: none;	
+}
+
+.navbar.navbar-default {
 	background: transparent;
 	border-bottom: none;
 	box-shadow: none;
@@ -22,6 +26,7 @@
 	letter-spacing: 1px;
 	color: "black";
 	font-size:48px;
+	margin-bottom: 0px;
 }
 
 #top {
@@ -67,7 +72,9 @@ body {
 
 p {
 	font-family: 'Abel', sans-serif;
-	font-size: 17px;
+	font-size: 16px;
+	text-align:justify;
+	color:black;
 }
 
 #wrapper {
@@ -85,6 +92,31 @@ p {
 }
 
 /* Button Blue: #2D6594 */
+#readmore {
+	background-color: hsl(207, 53%, 38%);
+	display: inline-block;
+	cursor: pointer;
+	color: hsl(180, 3%, 89%);
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 8px 0 8px 0;
+	width: 200px;
+	border-bottom: 4px solid hsl(207, 53%, 28%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 80px; /* the logo is 146 px in height */
+	margin-left: -100px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 1px;
+}
+
+#readmore:hover {
+	text-decoration: none;
+}
 /* #E1E3E3*/
 
 #middle {
@@ -92,16 +124,30 @@ p {
 	height: auto;
 	width: 100%;
 	position: relative;
-	background-color: #E1E3E3;
+	background-color: #FFFFFF;
+	font-family: 'Abel', sans-serif;
 }
 
-#ablock {
-	min-height: 60%;
-	height: auto;
+.bar {
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-bottom: 15px;
+	width: 75px;
+	height: 3px;
+	background-color: #305969;
+}
+
+.white {
+	background-color: #FFFFFF;
+}
+
+.a-block {
 	width: 100%;
+	height: auto;
+	padding: 5px 15% 5px 15%;
 	position: relative;
-	background-color: #E1E3E3;
-	padding: 5% 5% 0 5%;
+	background-color: #FFFFFF;
 }
 
 #intro {
@@ -109,6 +155,18 @@ p {
 }
 
 #footer {
-	height:300px;
-	background-color: rgba(0, 0, 0, 0.7);
+	height:40%;
+	background-color: #2a333c;
+}
+
+.foot-role {
+	color: white;
+}
+
+.foot-name {
+	color: #797979;
+}
+
+.foot-email {
+	color: #50acce;
 }

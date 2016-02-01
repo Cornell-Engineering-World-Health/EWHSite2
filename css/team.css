@@ -3,12 +3,12 @@
   height: auto;
   width: 100%;
   position: relative;
-  background-color: #E1E3E3;
-  padding: 110px 5% 110px 5%;
+  background-color: #FFFFFF;
+  padding: 110px 15% 110px 15%;
 }
 
 #electrical, #supreme {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #elec-wrapper {
@@ -46,7 +46,7 @@
   width: 50%;
   min-height: 60%;
   height: 60%;
-  overflow: scroll;
+  overflow: hidden;
   position: relative;
   margin: 10% auto;
   padding: 5px 30px 13px 30px;
@@ -61,18 +61,17 @@
 .close {
   margin-top: 15px;
   background: transparent;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 25px;
   float: right;
   text-decoration: none;
-  font-weight: bold;
+  text-shadow: none;
   font-size: 30px;
   filter: none;
   opacity: 1;
 }
 
 .close:hover { 
-  background: rgba(0, 0, 0, 0.6);
   color: #FFFFFF;
   filter: none;
   opacity: 1;
@@ -82,4 +81,34 @@
   width: 40%;
   float: left;
   margin-right: 5%;
+}
+
+.slick-slide img {
+  padding: 6%;
+  width: 100%;
+}
+
+.slick-center img {
+  padding: 0;
+  width: 100%;
+}
+
+a:focus {
+  outline: none;
+}
+
+#bio .slick-prev::before, #bio .slick-next::before {
+  color: black;
+}
+
+.name {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.year {
+  margin: 0;
+  text-align: center;
+  color: #959595;
 }

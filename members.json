@@ -2,25 +2,226 @@
   {
     "id" : "bus_kevia",
     "name" : "Kevia Qu",
+    "year" : "2016",
+    "major" : "Chemical Engineering",
+    "team" : "President, Business Team Lead",
     "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
     "image_url": "headshots/Kevia.jpg"
   },
   {
     "id" : "bus_theresa",
     "name" : "Theresa Cao",
+    "year" : "2018",
+    "major" : "Economics",
+    "team" : "Business",
     "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
     "image_url": "headshots/Theresa.jpg"
   },
   {
-    "id" : "cs_peaky",
-    "name" : "Peaky Yuter",
-    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
-    "image_url": "headshots/Peaky.jpg"
+    "id" : "bus_rohit",
+    "name" : "Rohit Jha",
+    "year" : "2017",
+    "major" : "Electrical Engineering",
+    "team" : "Business",
+    "bio" : "EWH has broadened my horizons and has provided a synthesis in both  the engineering and the business world.",
+    "image_url": "headshots/Rohit.jpg"
   },
   {
     "id" : "elec_justin",
     "name" : "Justin Selig",
-    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "year" : "2017",
+    "major" : "Electrical Engineering",
+    "team" : "Vice President, Electrical Team Lead",
+    "bio" : "EWH has given me countless opportunities to develop my technical, managerial, and leadership skills while simultaneously providing me an outlet to pursue my passion for global health. Every year since I joined EWH has been an intense learning experience and the students I get to work with never cease to impress me.",
     "image_url": "headshots/Justin.jpg"
+  },
+  {
+    "id" : "elec_samir",
+    "name" : "Samir Durvasula",
+    "year" : "2017",
+    "major" : "Electrical Engineering",
+    "team" : "Electrical Technical Lead",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Samir.jpg"
+  },
+  {
+    "id" : "elec_manish",
+    "name" : "Manish Patel",
+    "year" : "2017",
+    "major" : "Electrical Engineering",
+    "team" : "Electrical Technical Lead",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Manish.jpg"
+  },
+  {
+    "id" : "elec_adarsh",
+    "name" : "Adarsh Jayakumar",
+    "year" : "2017",
+    "major" : "Electrical Engineering",
+    "team" : "Consultant-Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Adarsh.jpg"
+  },
+  {
+    "id" : "elec_adam",
+    "name" : "Adam Chung",
+    "year" : "2018",
+    "major" : "Electrical Engineering",
+    "team" : "Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Adam.jpg"
+  },
+  {
+    "id" : "elec_jessica",
+    "name" : "Jessica Chen",
+    "year" : "2018",
+    "major" : "Electrical Engineering",
+    "team" : "Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Jessica.jpg"
+  },
+  {
+    "id" : "elec_sagar",
+    "name" : "Sagar Vadallia",
+    "year" : "2018",
+    "major" : "Computer Science",
+    "team" : "Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Sagar.jpg"
+  },
+  {
+    "id" : "elec_ben",
+    "name" : "Benjamin Edwards",
+    "year" : "2019",
+    "major" : "Computer Science",
+    "team" : "Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Ben.jpg"
+  },
+  {
+    "id" : "elec_sonia",
+    "name" : "Sonia Appasamy",
+    "year" : "2019",
+    "major" : "Computer Science",
+    "team" : "Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Sonia.jpg"
+  },
+  {
+    "id" : "elec_vidya",
+    "name" : "Vidya Ramesh",
+    "year" : "2018",
+    "major" : "Electrical Engineering",
+    "team" : "Electrical",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Vidya.jpg"
+  },
+  {
+    "id" : "cs_peaky",
+    "name" : "Peaky Yuter",
+    "year" : "2016",
+    "major" : "Computer Science",
+    "team" : "Computer Science",
+    "bio" : "EWH is one of those opportunities that comes around extremely rarely. Not only does it give young engineers the chance to expand thier technical skill while channeling them into products that produce positive good, it also is a tightly knit group that is fostering a larger and larger community every year.",
+    "image_url": "headshots/Peaky.jpg"
+  },
+  {
+    "id" : "cs_frank",
+    "name" : "Frank Chan",
+    "year" : "2018",
+    "major" : "Computer Science",
+    "team" : "Computer Science",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Frank.jpg"
+  },
+  {
+    "id" : "cs_erin",
+    "name" : "Erin Chen",
+    "year" : "2018",
+    "major" : "Computer Science",
+    "team" : "Computer Science",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Erin.jpg"
+  },
+  {
+    "id" : "cs_annie",
+    "name" : "Annie Tran",
+    "year" : "2018",
+    "major" : "Computer Science",
+    "team" : "Computer Science",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Annie.jpg"
+  },
+  {
+    "id" : "cs_lillyan",
+    "name" : "Lillyan Pan",
+    "year" : "2018",
+    "major" : "Computer Science/Electrical Engineering",
+    "team" : "Computer Science",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Lillyan.jpg"
+  },
+  {
+    "id" : "bio_kate",
+    "name" : "Kate Schole",
+    "year" : "2017",
+    "major" : "Biological Engineering",
+    "team" : "Bio Team Lead",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Kate.jpg"
+  },
+  {
+    "id" : "bio_robert",
+    "name" : "Robert Lee",
+    "year" : "2017",
+    "major" : "Chemical Engineering",
+    "team" : "",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Robert.jpg"
+  },
+  {
+    "id" : "bio_julia",
+    "name" : "Julia Kelly",
+    "year" : "2016",
+    "major" : "Biological Engineering",
+    "team" : "",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Julia.jpg"
+  },
+  {
+    "id" : "bio_fahmida",
+    "name" : "Fahmida Rashid",
+    "year" : "2016",
+    "major" : "Biological Engineering",
+    "team" : "",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Fahmida.jpg"
+  },
+  {
+    "id" : "bio_yan",
+    "name" : "Yan Zhang",
+    "year" : "2017",
+    "major" : "Chemical Engineering",
+    "team" : "",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Julia.jpg"
+  },
+  {
+    "id" : "bio_jenny",
+    "name" : "Jenny DiPietro",
+    "year" : "2018",
+    "major" : "Global & Public Health Sciences",
+    "team" : "Bio",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/Jenny.jpg"
+  },
+  {
+    "id" : "bio_george",
+    "name" : "George Danias",
+    "year" : "2017",
+    "major" : "Biological Engineering",
+    "team" : "",
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "image_url": "headshots/George.jpg"
   }
 ]}

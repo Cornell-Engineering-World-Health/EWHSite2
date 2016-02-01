@@ -7,17 +7,21 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>  
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="team.js"></script>
+  <script type="text/javascript" src="scripts/slick.min.js"></script>
   <script type="text/javascript" src="scripts/mustache.js"></script>
   <script id="modal-template" type="text/template">
     {{#member}}
       <div id='{{id}}' class='modalBio'>
         <div>
-          <a href='#close' title='Close' class='close'>X</a>
+          <a href='#close' title='Close' class='close'><i class="fa fa-times"></i></a>
           <p class='header' style='color:white;'>{{name}}</p>
           <img class='img-circle headshot' src='{{image_url}}'/>
           <p style='text-align: justify'>{{bio}}</p>
@@ -31,7 +35,7 @@
   <div id="wrapper">
     <div id="cover" style="min-height: 60% !important; height:60%;">
       <div id="navigation">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default" role="navigation">
           <div class="container-fluid" style="width:100%;">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
@@ -46,8 +50,8 @@
                 <li><a href="index.html">About us</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="#sponsor">Sponsor</a></li>
-                <li><a href="contact">Contact us</a></li>
+                <li><a href="sponsor.html">Sponsor</a></li>
+                <li><a href="contact.html">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -60,33 +64,95 @@
       <p class="header" style="color:black; font-size:48px;">
         meet the team
       </p>
+      <div class="bar"></div>
       <p style="text-align:justify; color:black;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at, lobortis at leo. Morbi dolor turpis, ornare a quam sed, hendrerit tempor dolor. Integer nisi enim, vulputate et tellus nec, euismod luctus dolor. Nullam egestas lacinia auctor. Nunc eros libero, finibus ut semper sit amet, eleifend vitae metus. Maecenas placerat magna risus, eget malesuada est feugiat vitae. Fusce aliquam lorem vitae diam maximus, ut mollis urna laoreet. Aliquam at lorem vitae magna venenatis ultrices a ut odio.
       </p>
+      <div class="team-scroll">
+        <div>
+          <a href="#bus_kevia"><img class="img-circle" src="headshots/Kevia.jpg"/></a>
+          <p class="name">Kevia Qu</p>
+          <p class="year">2016</p>
+        </div>
+        <div>
+          <a href="#elec_justin"><img class="img-circle" src="headshots/Justin.jpg"/></a>
+          <p class="name">Justin Selig</p>
+          <p class="year">2017</p>
+        </div>
+        <div>
+          <a href="#bio_kate"><img class="img-circle" src="headshots/Kate.jpg"/></a>
+          <p class="name">Kate Schole</p>
+          <p class="year">2017</p>
+        </div>
+        <div>
+          <a href="#cs_peaky"><img class="img-circle" src="headshots/Peaky.jpg"/></a>
+          <p class="name">Peaky Yuter</p>
+          <p class="year">2016</p>
+        </div>
+      </div>
       <img id="top" src="misc/black_timeline_top.png" />
     </div>
     <div id="elec-wrapper">
-      <div id="electrical" class="container subteam" style="background-image: url("temp.jpg");">
+      <div id="electrical" class="container subteam" style="background-image: url('temp.jpg');">
         <img id="bot" src="misc/white_timeline_top.png" />
-          <p class="header" style="color:#E1E3E3; font-size:48px;">
-            Electrical Engineering
+          <p class="header" style="color:#FFFFFF; font-size:48px;">
+            Electrical
           </p>
-          <p style="text-align:justify; color:#E1E3E3;">
+          <div class="bar white"></div>
+          <p style="text-align:justify; color:#FFFFFF;">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at, lobortis at leo. Morbi dolor turpis, ornare a quam sed, hendrerit tempor dolor. Integer nisi enim, vulputate et tellus nec, euismod luctus dolor. Nullam egestas lacinia auctor. Nunc eros libero, finibus ut semper sit amet, eleifend vitae metus. Maecenas placerat magna risus, eget malesuada est feugiat vitae. Fusce aliquam lorem vitae diam maximus, ut mollis urna laoreet. Aliquam at lorem vitae magna venenatis ultrices a ut odio.
           </p>
-          <div class="row">
-            <a href="#bus_kevia"><div class="col-md-3">
-              <img class="img-circle" src="headshots/Kevia.jpg" style="width: 100%;"/>
-            </div></a>
-            <a href="#elec_justin"><div class="col-md-3">
-              <img class="img-circle" src="headshots/Justin.jpg" style="width: 100%;"/>
-            </div></a>
-            <a href="#bus_theresa"><div class="col-md-3">
-              <img class="img-circle" src="headshots/Theresa.jpg" style="width: 100%;"/>
-            </div></a>
-            <a href="#cs_peaky"><div class="col-md-3">
-              <img class="img-circle" src="headshots/Peaky.jpg" style="width: 100%;"/>
-            </div></a>
+          <div class="team-scroll">
+            <div>
+              <a href="#elec_justin"><img class="img-circle" src="headshots/Justin.jpg"/></a>
+              <p class="name" style="color:white;">Justin Selig</p>
+              <p class="year">2017</p>
+            </div>
+            <div>
+              <a href="#elec_samir"><img class="img-circle" src="headshots/Samir.jpg"/></a>
+              <p class="name" style="color:white;">Samir Durvasula</p>
+              <p class="year">2017</p>
+            </div>
+            <div>
+              <a href="#elec_manish"><img class="img-circle" src="headshots/Manish.jpg"/></a>
+              <p class="name" style="color:white;">Manish Patel</p>
+              <p class="year">2017</p>
+            </div>
+            <div>
+              <a href="#elec_adarsh"><img class="img-circle" src="headshots/Adarsh.jpg"/></a>
+              <p class="name" style="color:white;">Adarsh Jayakumar</p>
+              <p class="year">2017</p>
+            </div>
+            <div>
+              <a href="#elec_jessica"><img class="img-circle" src="headshots/Jessica.jpg"/></a>
+              <p class="name" style="color:white;">Jessica Chen</p>
+              <p class="year">2018</p>
+            </div>
+            <div>
+              <a href="#elec_adam"><img class="img-circle" src="headshots/Adam.jpg"/></a>
+              <p class="name" style="color:white;">Adam Chung</p>
+              <p class="year">2018</p>
+            </div>
+            <div>
+              <a href="#elec_vidya"><img class="img-circle" src="headshots/Vidya.jpg"/></a>
+              <p class="name" style="color:white;">Vidya Ramesh</p>
+              <p class="year">2018</p>
+            </div>
+            <div>
+              <a href="#elec_sagar"><img class="img-circle" src="headshots/Sagar.jpg"/></a>
+              <p class="name" style="color:white;">Sagar Vadallia</p>
+              <p class="year">2018</p>
+            </div>
+            <div>
+              <a href="#elec_ben"><img class="img-circle" src="headshots/Ben.jpg"/></a>
+              <p class="name" style="color:white;">Benjamin Edwards</p>
+              <p class="year">2019</p>
+            </div>
+            <div>
+              <a href="#elec_sonia"><img class="img-circle" src="headshots/Sonia.jpg"/></a>
+              <p class="name" style="color:white;">Sonia Appasamy</p>
+              <p class="year">2019</p>
+            </div>
           </div>
           <img id="top" src="misc/white_timeline.png" />
         </div>
@@ -94,48 +160,86 @@
     <div id="bio" class="container subteam">
       <img id="bot" src="misc/black_timeline.png" />
       <p class="header" style="color:black; font-size:48px;">
-        Bio
+        Biology
       </p>
+      <div class="bar"></div>
       <p style="text-align:justify; color:black;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at, lobortis at leo. Morbi dolor turpis, ornare a quam sed, hendrerit tempor dolor. Integer nisi enim, vulputate et tellus nec, euismod luctus dolor. Nullam egestas lacinia auctor. Nunc eros libero, finibus ut semper sit amet, eleifend vitae metus. Maecenas placerat magna risus, eget malesuada est feugiat vitae. Fusce aliquam lorem vitae diam maximus, ut mollis urna laoreet. Aliquam at lorem vitae magna venenatis ultrices a ut odio.
       </p>
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Kevia.jpg" style="width: 100%;"/>
+      <div class="team-scroll">
+        <div>
+          <a href="#bio_kate"><img class="img-circle" src="headshots/Kate.jpg"/></a>
+          <p class="name">Kate Schole</p>
+          <p class="year">2017</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Justin.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#bio_robert"><img class="img-circle" src="headshots/Robert.jpg"/></a>
+          <p class="name">Robert Lee</p>
+          <p class="year">2017</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Theresa.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#bio_julia"><img class="img-circle" src="headshots/Julia.jpg"/></a>
+          <p class="name">Julia Kelly</p>
+          <p class="year">2016</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Peaky.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#bio_fahmida"><img class="img-circle" src="headshots/Fahmida.jpg"/></a>
+          <p class="name">Fahmida Rashid</p>
+          <p class="year">2016</p>
+        </div>
+        <div>
+          <a href="#bio_yan"><img class="img-circle" src="headshots/Yan.jpg"/></a>
+          <p class="name">Yan Zhang</p>
+          <p class="year">2017</p>
+        </div>
+        <div>
+          <a href="#bio_jenny"><img class="img-circle" src="headshots/Jenny.jpg"/></a>
+          <p class="name">Jenny DiPietro</p>
+          <p class="year">2018</p>
+        </div>
+        <div>
+          <a href="#bio_george"><img class="img-circle" src="headshots/George.jpg"/></a>
+          <p class="name">George Danias</p>
+          <p class="year">2017</p>
         </div>
       </div>
       <img id="top" src="misc/black_timeline_top.png" />
     </div>
     <div id="cs-wrapper">
-      <div id="supreme" class="container subteam">
+      <div id="supreme" class="container subteam" style="background-image: url('temp2.jpg');">
       <img id="bot" src="misc/white_timeline_top.png" />
-      <p class="header" style="color:#E1E3E3; font-size:48px;">
+      <p class="header" style="color:#FFFFFF;">
         Computer Science
       </p>
-      <p style="text-align:justify; color:#E1E3E3;">
+      <div class="bar white"></div>
+      <p style="text-align:justify; color:#FFFFFF;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at, lobortis at leo. Morbi dolor turpis, ornare a quam sed, hendrerit tempor dolor. Integer nisi enim, vulputate et tellus nec, euismod luctus dolor. Nullam egestas lacinia auctor. Nunc eros libero, finibus ut semper sit amet, eleifend vitae metus. Maecenas placerat magna risus, eget malesuada est feugiat vitae. Fusce aliquam lorem vitae diam maximus, ut mollis urna laoreet. Aliquam at lorem vitae magna venenatis ultrices a ut odio.
       </p>
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Kevia.jpg" style="width: 100%;"/>
+      <div class="team-scroll">
+        <div>
+          <a href="#cs_peaky"><img class="img-circle" src="headshots/Peaky.jpg"/></a>
+          <p class="name" style="color:white;">Peaky Yuter</p>
+          <p class="year">2016</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Justin.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#cs_frank"><img class="img-circle" src="headshots/Frank.jpg"/></a>
+          <p class="name" style="color:white;">Frank Chan</p>
+          <p class="year">2018</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Theresa.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#cs_erin"><img class="img-circle" src="headshots/Erin.jpg"/></a>
+          <p class="name" style="color:white;">Erin Chen</p>
+          <p class="year">2018</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Peaky.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#cs_annie"><img class="img-circle" src="headshots/Annie.jpg"/></a>
+          <p class="name" style="color:white;">Annie Tran</p>
+          <p class="year">2018</p>
+        </div>
+        <div>
+          <a href="#cs_lillyan"><img class="img-circle" src="headshots/Lillyan.jpg"/></a>
+          <p class="name" style="color:white;">Lillyan Yan</p>
+          <p class="year">2018</p>
         </div>
       </div>
       <img id="top" src="misc/white_timeline.png" />
@@ -146,26 +250,71 @@
       <p class="header" style="color:black; font-size:48px;">
         Business
       </p>
+      <div class="bar"></div>
       <p style="text-align:justify; color:black;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum risus malesuada ligula luctus elementum. Ut mollis convallis erat, vitae placerat arcu venenatis in. Cras vel orci lacinia, luctus ante quis, porttitor mauris. Pellentesque molestie molestie facilisis. Vestibulum quis dignissim est, a faucibus nisl. Mauris tempor lacinia metus. Quisque at odio et felis luctus commodo. Nam turpis magna, hendrerit ac ligula nec, vestibulum interdum justo. Cras arcu lorem, tincidunt vel scelerisque at, lobortis at leo. Morbi dolor turpis, ornare a quam sed, hendrerit tempor dolor. Integer nisi enim, vulputate et tellus nec, euismod luctus dolor. Nullam egestas lacinia auctor. Nunc eros libero, finibus ut semper sit amet, eleifend vitae metus. Maecenas placerat magna risus, eget malesuada est feugiat vitae. Fusce aliquam lorem vitae diam maximus, ut mollis urna laoreet. Aliquam at lorem vitae magna venenatis ultrices a ut odio.
       </p>
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Kevia.jpg" style="width: 100%;"/>
+      <div class="team-scroll">
+        <div>
+          <a href="#bus_kevia"><img class="img-circle" src="headshots/Kevia.jpg"/></a>
+          <p class="name">Kevia Qu</p>
+          <p class="year">2016</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Justin.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#bus_rohit"><img class="img-circle" src="headshots/Rohit.jpg"/></a>
+          <p class="name">Rohit Jha</p>
+          <p class="year">2017</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Theresa.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#bus_theresa"><img class="img-circle" src="headshots/Theresa.jpg"/></a>
+          <p class="name">Theresa Cao</p>
+          <p class="year">2018</p>
         </div>
-        <div class="col-md-3">
-          <img class="img-circle" src="headshots/Peaky.jpg" style="width: 100%;"/>
+        <div>
+          <a href="#cs_frank"><img class="img-circle" src="headshots/Frank.jpg"/></a>
+          <p class="name">Frank Chan</p>
+          <p class="year">2018</p>
         </div>
       </div>
+      <img id="top" src="misc/black_timeline_top.png" />
     </div>
-    <div id="footer">
-    </div>
+    <footer id="footer">
+      <br>
+      <div class="container-fluid" style="padding-top: 20px;">
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2">
+            <img src="css/cornell logo.png" style="width: 100%;"/>
+          </div>
+          <div class="col-xs-2">
+            <p class="foot-role" style="text-align: left;">contact</p>
+            <div class="row">
+              <span>
+                <a href="https://www.facebook.com/CornellEWH/?fref=ts" style="color: white"><img src="css/facebook.png"/></a>
+                <a href="contact.html" target="_top" style="color: white"><img src="css/mail.png"/></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <p class="foot-name">Kevia Qu</p>
+            <p class="foot-role">President</p>
+            <p class="foot-email">kq37@cornell.edu</p>
+          </div>
+          <div class="col-xs-2">
+            <p class="foot-name">Justin Selig</p>
+            <p class="foot-role">Vice President</p>
+            <p class="foot-email">jss459@cornell.edu</p>
+          </div>
+          <div class="col-xs-2">
+            <p class="foot-name">Kate Schole</p>
+            <p class="foot-role">Team Lead</p>
+            <p class="foot-email">kls289@cornell.edu</p>
+          </div>
+          <div class="col-xs-1"></div>
+        </div>
+        
+      </div>
+    </footer>
   </div>
 </body>
 </html>
