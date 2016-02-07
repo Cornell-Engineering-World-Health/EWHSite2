@@ -112,3 +112,10 @@ a:focus {
   text-align: center;
   color: #959595;
 }
+
+.role {
+  margin: 0;
+  text-align: center;
+  color: #D4AF37;
+  text-transform: uppercase;
+}

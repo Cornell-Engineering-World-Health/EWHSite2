@@ -5,3 +5,7 @@
 #middle p {
   color: white;
 }
+
+.left {
+  border-left: 1px solid #FFFFFF;
+}
