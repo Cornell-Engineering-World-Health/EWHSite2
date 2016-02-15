@@ -87,6 +87,7 @@ p {
 #cover {
 	min-height: 100% !important;
 	height: 100%;
+	width: 100%;
 	position: relative;
 	background-color: rgba(32,62,76,0.5);
 }
@@ -155,7 +156,8 @@ p {
 }
 
 #footer {
-	height:40%;
+	min-height:40%;
+	width: 100%;
 	background-color: #2a333c;
 }
 
@@ -169,4 +171,7 @@ p {
 
 .foot-email {
 	color: #50acce;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	text-align:justify;
 }
