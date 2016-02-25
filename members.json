@@ -68,7 +68,7 @@
     "year" : "2018",
     "major" : "Electrical Engineering",
     "team" : "Electrical",
-    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "bio" : "",
     "image_url": "headshots/Adam.jpg"
   },
   {
@@ -140,7 +140,7 @@
     "year" : "2018",
     "major" : "Computer Science",
     "team" : "Computer Science",
-    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "bio" : "Not only does EWH provide a supportive and educational environment for me to develop my computer science skills, it also gives me the opportunity to engineer for social good.",
     "image_url": "headshots/Erin.jpg"
   },
   {
@@ -158,7 +158,7 @@
     "year" : "2018",
     "major" : "Computer Science/Electrical Engineering",
     "team" : "Computer Science",
-    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a arcu at turpis faucibus volutpat. Phasellus consectetur mollis enim ac porta. Nulla nulla arcu, vulputate in ex in, tempor elementum arcu. Aenean nunc arcu, sollicitudin quis purus sed, pellentesque vehicula sem. Nunc et erat eu magna vulputate interdum. Nulla vitae mi mauris. Donec ac convallis sapien, eget tincidunt dolor.",
+    "bio" : "EWH gives me the opportunity to apply and develop my skills to work on impactful, global health projects in a collabarative and driven environemnt.",
     "image_url": "headshots/Lillyan.jpg"
   },
   {
