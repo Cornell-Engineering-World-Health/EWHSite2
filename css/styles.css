@@ -157,17 +157,25 @@ p {
 }
 
 #footer {
-	min-height:40%;
+	min-height:37%;
 	width: 100%;
 	background-color: #2a333c;
 }
 
 .foot-role {
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
 	color: white;
+	display: block;
+	margin-bottom: 10px;
 }
 
 .foot-name {
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
 	color: #797979;
+	display: block;
+	margin-bottom: 10px;
 }
 
 .foot-email {
@@ -175,4 +183,22 @@ p {
 	font-family: 'Abel', sans-serif;
 	font-size: 16px;
 	text-align:justify;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 991px) {
+	span.foot-name {
+		display: inline-block;
+	}
+
+	span.foot-role {
+		display: inline-block;
+		margin-left: 8px;
+		padding-left: 8px;
+		border-left: 1px solid #FFFFFF;
+	}
+
+	span.foot-email {
+		display: block;
+	}
 }

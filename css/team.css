@@ -119,3 +119,19 @@ a:focus {
   color: #D4AF37;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 991px) {
+  .modalBio > div {
+    width: 80%;
+    min-height: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .modalBio > div {
+    width: 80%;
+    min-height: 80%;
+    height: 80%;
+  }
+}
