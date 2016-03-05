@@ -81,14 +81,14 @@ p {
 #wrapper {
 	min-height: 100% !important;
 	height: 100%;
-	width: 100%;
+	width: 100% !important;
 	position: absolute;
 }
 
 #cover {
 	min-height: 100% !important;
 	height: 100%;
-	width: 100%;
+	width: 100% !important;
 	position: relative;
 	background-color: rgba(32,62,76,0.5);
 }
@@ -158,7 +158,7 @@ p {
 
 #footer {
 	min-height:37%;
-	width: 100%;
+	width: 100% !important;
 	background-color: #2a333c;
 }
 
@@ -200,5 +200,9 @@ p {
 
 	span.foot-email {
 		display: block;
+	}
+
+	#logo {
+		width: 80%;
 	}
 }
