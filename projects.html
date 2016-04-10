@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://openlayers.org/en/v3.15.1/css/ol.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/projects.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>  
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="http://openlayers.org/en/v3.15.1/build/ol.js"></script>
 </head>
 <body>
   <div id="wrapper">
@@ -45,7 +47,72 @@
     </div>
     <div id="middle" style="padding: 0px 0px 0px 0px; background-color: #2a333c;">
       <img id="bot" src="misc/white_timeline_top.png" />
+      <div id="intro0" class="container-fluid" style="padding-top: 160px">
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-8">
+            <button class="button button-map active-bot">View Map</button>
+            <button class="button button-timeline">View Timeline</button>
+          </div>
+          <div class="col-sm-2">
+          </div>
+        </div>
+        <p class="header" style="color: white;">
+          EXPLORE
+        </p>
+        <div class="row">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-1">
+            <button id="fly-to-ithaca" class="button button-travel active-left">Ithaca</button><br>
+            <button id="fly-to-india" class="button button-travel">India</button><br>
+            <button id="fly-to-peru" class="button button-travel">Peru</button><br>
+          </div>
+          <div class="col-sm-9">
+            <div id="map-container" style="width: 100%; height: 420px; position: relative;">
+              <div id="map" class="map" style="width: 100%; height: 100%; position: absolute;"></div>
+              <div style="width: 100%; height: 100%; background: #2a333c; opacity: 0.1; position: absolute; right:0;"></div>
+              <div id="ithaca-text" class="map-description d-active">
+                <p class="header" style="font-size: 24px;">Cornell University</p>
+                <p class="header" style="font-size: 12px;">Ithaca, New York</p>
+                <p style="text-align:justify;">
+                  The Cornell Engineering World Health chapter was founded in the fall of 2012 by a group of undergraduates who wanted to make a meaningful impact in the world, even as students. This mission has become the core foundation of EWH as a project team that seeks to make innovative and low-cost medical devices for developing countries and low-resource communities. From idea conception, to design, to final prototyping, Cornell EWH has created several devices with the potential for impact. While in the past the team has submitted prototype designs to an international competition, and placed 3rd in their first submission, the team is now working on building devices that will be directly implemented by health care workers in low-resource communities.
+                </p>
+              </div>
+              <div id="india-text" class="map-description">
+                <p class="header" style="font-size: 24px;">Water Well Project</p>
+                <p class="header" style="font-size: 12px;">Pallapatla, India</p>
+                <p style="text-align:justify;">
+                  "This year, Cornell EWH is collaborating with Forefront, a non-profit organization that aims to provide sustainable change to underdeveloped communities with a four-phase approach. In the second phase of the plan aimed at creating clean drinking water, Forefront and Cornell EWH have partnered to create a remote water quality monitoring device for a well recently implemented in the village of Pallapatla, India. Our chapter of EWH is responsible for creating a working prototype and aims to install the system by the summer of 2016, working in a full team, cross-sub-team effort to develop the structure, integrated electronics, and data visualization for the remote monitoring device to provide both Forefront and the villagers of Pallapatla a reliable stream of information about the drinking water."
+                </p>
+              </div>
+              <div id="peru-text" class="map-description">
+                <p class="header" style="font-size: 24px;">Trip to Peru</p>
+                <p class="header" style="font-size: 12px;">Lima, Peru</p>
+                <p style="text-align:justify;">
+                  "Members of our team travelled to Lima, Peru for eight days, where they partnered with MedLife International, a nonprofit organization that runs many mobile clinics. During the trip, our team shadowed health care workers and worked alongside them to serve local patients and completed several projects, including building a staircase to help facilitate transportation for the community. Members not only grew as individuals through their first-hand exposure to the implementation of global health initiatives but also helped bring back ideas and stories to guide the future progression of the team. As our team continues to grow, we hope we can continuously build upon these valuable first hand experiences by creating more opportunities to interact with the world."
+                </p>
+              </div>
+              <div id="popup" class="ol-popup"></div>
+              <div style="position: absolute; left: 15px; bottom: 10px;">CORNELL EWH</div>
+            </div>
+          </div>
+          <div class="col-sm-1">
+          </div>
+        </div>
+      </div>
       <div id="intro" class="container-fluid" style="padding-top: 160px;">
+        <div class="row">
+          <div class="col-sm-2">
+          </div>
+          <div class="col-sm-8">
+            <button class="button button-map">View Map</button>
+            <button class="button button-timeline active-bot">View Timeline</button>
+          </div>
+          <div class="col-sm-2">
+          </div>
+        </div>
         <p class="header" style="color: white;">
           PROJECTS
         </p>
@@ -137,5 +204,112 @@
       </div>
     </footer>
   </div>
+  <script>
+    var ithaca = ol.proj.fromLonLat([-76.4780, 42.4479]);
+    var india = ol.proj.fromLonLat([80.750, 15.983]);
+    var peru = ol.proj.fromLonLat([-77.0428, -12.0464]);
+
+    var view = new ol.View({
+      // the view's initial state
+      center: ithaca,
+      zoom: 7
+    });
+
+    var container = document.getElementById('popup');
+    var content = document.getElementById('popup-content');
+
+    var overlay = new ol.Overlay({
+      element: container,
+      autoPan: true,
+      autoPanAnimation: {
+        duration: 250
+      }
+    });
+
+    var map = new ol.Map({
+      layers: [
+        new ol.layer.Tile({
+          preload: 4,
+          source: new ol.source.OSM()
+        })
+      ],
+      overlays: [overlay],
+      // Improve user experience by loading tiles while animating. Will make
+      // animations stutter on mobile or slow devices.
+      loadTilesWhileAnimating: true,
+      target: 'map',
+      controls: [],
+      view: view
+    });
+
+    var map_load = map.on('postcompose', function(event) {
+      overlay.setPosition(ithaca);
+      map.unByKey(map_load);
+    });
+
+    var flyToIthaca = document.getElementById('fly-to-ithaca');
+    flyToIthaca.addEventListener('click', function() {
+      overlay.setPosition(undefined);
+      fly(2200, ithaca);
+      setTimeout(function() { 
+        overlay.setPosition(ithaca);
+        $('#ithaca-text').addClass('d-active');          
+      }, 2300);
+    }, false);
+
+    var flyToIndia = document.getElementById('fly-to-india');
+    flyToIndia.addEventListener('click', function() {
+      overlay.setPosition(undefined);
+      fly(2200, india);
+      setTimeout(function() { 
+        overlay.setPosition(india);   
+        $('#india-text').addClass('d-active');       
+      }, 2300);
+    }, false);
+
+    var flyToPeru = document.getElementById('fly-to-peru');
+    flyToPeru.addEventListener('click', function() {
+      overlay.setPosition(undefined);
+      fly(2200, peru);
+      setTimeout(function() {
+        overlay.setPosition(peru);  
+        $('#peru-text').addClass('d-active');        
+      }, 2300);
+    }, false);
+
+    function fly(duration, location) {
+      var start = +new Date();
+      var pan = ol.animation.pan({
+        duration: duration,
+        source: (view.getCenter()),
+        start: start
+      });
+      var bounce = ol.animation.bounce({
+        duration: duration,
+        resolution: 3 * view.getResolution(),
+        start: start
+      });
+      map.beforeRender(pan, bounce);
+      view.setCenter(location);
+    }
+
+    $(document).ready(function() {
+      $('.button-travel').click(function() {
+        $('.button-travel').removeClass('active-left');
+        $(this).addClass('active-left');
+        $('.map-description').removeClass('d-active');
+      });
+
+      $('.button-map').click(function() {
+        $('#intro').hide();
+        $('#intro0').show();
+      });
+
+      $('.button-timeline').click(function() {
+        $('#intro0').hide();
+        $('#intro').show();
+      });
+    });
+  </script>
 </body>
 </html>

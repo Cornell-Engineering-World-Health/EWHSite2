@@ -6,6 +6,62 @@
   color: white;
 }
 
+#intro {
+  display: none;
+}
+
 .left {
   border-left: 1px solid #FFFFFF;
+}
+
+.ol-popup {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 60px;
+  background-color: rgba(32, 62, 76, 0.3);;
+  left: -60px;
+  top: -60px;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 0 0 5px 0;
+}
+
+.button-map, .button-timeline {
+  margin: 0 20px 0 0;
+}
+
+.button-travel {
+  padding: 0 0 0 15px;
+  margin: 5px 0 0 0;
+}
+
+.active-bot {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.active-left {
+  border-left: 2px solid #FFFFFF;
+  padding-left: 13px;
+}
+
+.map-description {
+  width: 40%; 
+  height: 100%; 
+  background: #2a333c; 
+  opacity: 0.9; 
+  position: absolute; 
+  right:0;
+  display: none;
+  padding: 10px 20px 10px 20px;
+}
+
+.d-active {
+  display: block;
 }
