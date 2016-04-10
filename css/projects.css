@@ -40,6 +40,7 @@
 .button-travel {
   padding: 0 0 0 15px;
   margin: 5px 0 0 0;
+  display: block;
 }
 
 .active-bot {
@@ -51,6 +52,12 @@
   padding-left: 13px;
 }
 
+#map-container {
+  width: 100%; 
+  height: 420px; 
+  position: relative;
+}
+
 .map-description {
   width: 40%; 
   height: 100%; 
@@ -60,8 +67,33 @@
   right:0;
   display: none;
   padding: 10px 20px 10px 20px;
+  overflow-y: scroll;
 }
 
 .d-active {
   display: block;
+}
+
+@media screen and (max-width: 760px) {
+  .map-description {
+    position: relative;
+    top: 100%;
+    width: 100%;
+  }
+
+  #map-container {
+    margin-bottom: 120%;
+  }
+
+  .button-travel {
+    display: inline-block;
+    padding: 0 15px 5px 15px;
+  }
+
+  .active-left {
+    border: none;
+    padding: 0;
+    margin: 0 15px 5px 15px;
+    border-bottom: 2px solid #FFFFFF;
+  }
 }
