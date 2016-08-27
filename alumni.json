@@ -1,0 +1,46 @@
+{ "row" : [
+  { "alum" : [
+    {
+      "id" : "alum_kevia",
+      "name" : "Kevia Qu",
+      "year" : "2016",
+      "contact" : "kq37@cornell.edu",
+      "position" : "President & Business Team Lead",
+      "bio" : "Kevia is currently a process development associate at Regeneron in Tarrytown, NY."
+    },
+    {
+      "id" : "alum_peaky",
+      "name" : "Peaky Yuter",
+      "year" : "2016",
+      "contact" : "ajy34@cornell.edu",
+      "position" : "Software Team Lead",
+      "bio" : "Peaky is now a product manager at Microsoft working on Microsoft Visual Studio in Seattle, WA."
+    },
+    {
+      "id" : "alum_humale",
+      "name" : "Humale Khan",
+      "year" : "2015",
+      "contact" : "hak59@cornell.edu",
+      "position" : "Software Team Lead",
+      "bio" : "Humale is currently a product manager at Microsoft in Seattle, WA."
+    }
+  ]},
+  { "alum" : [
+    {
+      "id" : "alum_brecken",
+      "name" : "Brecken Blackburn",
+      "year" : "2014",
+      "contact" : "brecken.blackburn@gmail.com",
+      "position" : "President",
+      "bio" : "Brecken is now pursuing a PhD at John Hopkins University."
+    },
+    {
+      "id" : "alum_paul",
+      "name" : "Paul Chang",
+      "year" : "2014",
+      "contact" : "yc693@cornell.edu",
+      "position" : "Team Lead",
+      "bio" : "After completing his MEng at Cornell, Paul now works for a product design firm in Boston."
+    }
+  ]}
+]}

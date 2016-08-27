@@ -1,5 +1,5 @@
 .navbar {
-	border: none;	
+	border: none;
 }
 
 .navbar.navbar-default {
@@ -29,6 +29,19 @@
 	margin-bottom: 0px;
 }
 
+.subheader {
+	font-family: 'Abel', sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #4b4949;
+	font-size:14px;
+	margin-bottom: 10px;
+}
+
+.medium {
+	font-size: 28px;
+}
+
 #top {
 	position: absolute;
   top: 100%;
@@ -48,12 +61,12 @@
 }
 
 #logo {
-	width: 50%;
-	top: 0;
-	bottom: 0;
-	left: 0;
+	width: 90%;
+	top: 35%;
 	right: 0;
+	left: 0;
 	margin: auto;
+	transform: translate(0%, -50%);
 	position: absolute;
 }
 
@@ -63,7 +76,7 @@ html {
 }
 
 body {
-	background-image: url("ewhbackground.jpg");
+	background-image: url("css/ewhbackground.jpg");
 	background-size: 100% 100%;
 	min-height: 100%;
 	min-width: 100%;
@@ -87,11 +100,22 @@ p {
 }
 
 #cover {
-	min-height: 100% !important;
 	height: 100%;
+	min-height: 100% !important;
 	width: 100% !important;
 	position: relative;
 	background-color: rgba(32,62,76,0.5);
+}
+
+#cover-halves-container {
+		height: 100%;
+		width: 100%;
+		position: relative;
+}
+
+.cover-half {
+	height: 100%;
+	position: relative;
 }
 
 /* Button Blue: #2D6594 */
@@ -109,7 +133,7 @@ p {
 	width: 200px;
 	border-bottom: 4px solid hsl(207, 53%, 28%);
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	left: 50%;
 	margin-top: 80px; /* the logo is 146 px in height */
 	margin-left: -100px;
@@ -143,6 +167,10 @@ p {
 
 .white {
 	background-color: #FFFFFF;
+}
+
+.transparent {
+	background-color: transparent;
 }
 
 .a-block {
@@ -187,6 +215,45 @@ p {
 	margin-bottom: 10px;
 }
 
+#apply {
+	margin: 5% 5%;
+	height: 75%;
+	font-family: 'Abel', sans-serif;
+	background-color: #D3D3D3;
+	padding: 20px 40px;
+	overflow-y: scroll;
+}
+
+input, textarea {
+  padding-left: 5px;
+  width: 100%;
+  border: none;
+  border-left: 1px solid #305969;
+	background-color: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-left: 2px solid #305969;
+}
+
+.radio {
+	width: auto;
+}
+
+#app_submit {
+	width: 100%;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #305969;
+}
+
 @media screen and (max-width: 991px) {
 	span.foot-name {
 		display: inline-block;
@@ -204,6 +271,17 @@ p {
 	}
 
 	#logo {
-		width: 80%;
+		width: 90%;
+	}
+
+	#cover {
+		height: 200%;
+	}
+	.cover-half {
+		height: 50%;
+	}
+
+	.in-the-way {
+		display: none;
 	}
 }

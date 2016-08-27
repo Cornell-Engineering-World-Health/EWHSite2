@@ -1,12 +1,7 @@
 { "news" : [
   {
-    "news_title" : "Cornell EWH",
-    "date" : "February, 2016",
-    "news_body" : "We have begun the build phase of our Water Quality Monitoring System."
-  },
-  {
-    "news_title" : "Cornell EWH",
-    "date" : "February 7, 2016",
-    "news_body" : "If you are looking to join Cornell EWH, please join us for one of our information sessions in the Fall of 2016. We are not recruiting at this time."
+    "news_title" : "EWH Information Sessions",
+    "date" : "September 2016",
+    "news_body" : "Hi all! As the semester starts we have planned information sessions for new and returning students interested in joining the team. Please look below for our scheduled sessions. We look forward to seeing you there!<br><br>Saturday, August 27, 2016 // Phillips 203 // 12:30PM<br>Wednesday, August 31, 2016 // Phillips 219 // 6:30PM<br>Friday, September 2, 2016 // Phillips 219 // 5:00PM"
   }
 ]}

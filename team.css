@@ -7,17 +7,22 @@
   padding: 110px 15% 110px 15%;
 }
 
-#electrical, #supreme {
+#electrical, #supreme, #alumni {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 #elec-wrapper {
-  background-image: url("temp.jpg");
+  background-image: url("./css/temp.jpg");
   background-size: cover;
 }
 
 #cs-wrapper {
-  background-image: url("temp1.jpg");
+  background-image: url("./css/temp1.jpg");
+  background-size: cover;
+}
+
+#alumni-wrapper {
+  background-image: url("./alumni_temp_background.jpeg");
   background-size: cover;
 }
 
@@ -71,7 +76,7 @@
   opacity: 1;
 }
 
-.close:hover { 
+.close:hover {
   color: #FFFFFF;
   filter: none;
   opacity: 1;
@@ -97,7 +102,8 @@ a:focus {
   outline: none;
 }
 
-#bio .slick-prev::before, #bio .slick-next::before {
+#bio .slick-prev::before, #bio .slick-next::before,
+#leads .slick-prev::before, #leads .slick-next::before {
   color: black;
 }
 

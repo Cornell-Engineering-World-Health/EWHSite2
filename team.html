@@ -4,17 +4,16 @@
   <title>Cornell Engineering World Health</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="team.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="team.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/slick.min.js"></script>
   <script type="text/javascript" src="scripts/mustache.js"></script>
   <script id="modal-template" type="text/template">
@@ -30,6 +29,21 @@
       </div>
     {{/member}}
   </script>
+  <script id="alumni-template" type="text/template">
+    {{#row}}
+    <div class="row">
+      {{#alum}}
+        <div class="alumni-container col-md-4" style="margin: 20px 0;">
+          <p class="name" style="color:white;">{{name}}</p>
+          <p class="year">{{position}}, {{year}}</p>
+          <p class="year">{{contact}}</p>
+          <p class="year">{{bio}}</p>
+        </div>
+      {{/alum}}
+    </div>
+    {{/row}}
+  </script>
+  <script type="text/javascript" src="team.js"></script>
 </head>
 
 <body>
@@ -60,39 +74,45 @@
       </div>
       <img id="top" src="misc/white_timeline.png" />
     </div>
-    <div class="subteam container" style="padding-top: 140px;">
+    <div id="leads" class="subteam container" style="padding-top: 140px;">
       <img id="bot" src="misc/black_timeline.png" />
       <p class="header" style="color:black; font-size:48px;">
         meet the team
       </p>
       <div class="bar"></div>
       <p style="text-align:justify; color:black;">
-          Over the course of the last three years, EWH has grown into a multi-disciplinary team with students in electrical, mechanical, biological, computer, and chemical engineering, as well as global health and economics. The project team is comprised of three technical sub-teams (bio and structural, electrical, and CS) and a business team. Together, the sub-teams collaborate on different aspects of a project to create a robust and innovative low-cost engineering solution to medical problems in developing countries. While gaining technical skills ranging from CADing and machining  to designing analog circuits, members of the project team also gain valuable skills in project management, product design, and cross-functional collaboration.   
+          Over the course of the last three years, EWH has grown into a multi-disciplinary team with students in electrical, mechanical, biological, computer, and chemical engineering, as well as global health and economics. The project team is comprised of three technical sub-teams (bio and structural, electrical, and CS) and a business team. Together, the sub-teams collaborate on different aspects of a project to create a robust and innovative low-cost engineering solution to medical problems in developing countries. While gaining technical skills ranging from CADing and machining  to designing analog circuits, members of the project team also gain valuable skills in project management, product design, and cross-functional collaboration.
       </p>
       <div class="team-scroll">
         <div>
-          <a href="#bus_kevia"><img class="img-circle" src="headshots/Kevia.jpg"/></a>
-          <p class="name">Kevia Qu</p>
-          <p class="role">President</p>
-          <p class="year">2016</p>
+          <a href="#bio_kate"><img class="img-circle" src="headshots/Kate.jpg"/></a>
+          <p class="name">Kate Schole</p>
+          <p class="role">Co-President</p>
+          <p class="year">2017</p>
         </div>
         <div>
           <a href="#elec_justin"><img class="img-circle" src="headshots/Justin.jpg"/></a>
           <p class="name">Justin Selig</p>
-          <p class="role">Vice President</p>
-          <p class="year">2017</p>
-        </div>
-        <div>
-          <a href="#bio_kate"><img class="img-circle" src="headshots/Kate.jpg"/></a>
-          <p class="name">Kate Schole</p>
-          <p class="role">Team Lead</p>
-          <p class="year">2017</p>
-        </div>
-        <div>
-          <a href="#cs_peaky"><img class="img-circle" src="headshots/Peaky.jpg"/></a>
-          <p class="name">Peaky Yuter</p>
-          <p class="role">Team Lead</p>
+          <p class="role">Co-President</p>
           <p class="year">2016</p>
+        </div>
+        <div>
+          <a href="#elec_samir"><img class="img-circle" src="headshots/Samir.jpg"/></a>
+          <p class="name">Samir Durvasula</p>
+          <p class="role">Team Lead</p>
+          <p class="year">2017</p>
+        </div>
+        <div>
+          <a href="#bio_jenny"><img class="img-circle" src="headshots/Jenny.jpg"/></a>
+          <p class="name">Jenny DiPietro</p>
+          <p class="role">Team Lead</p>
+          <p class="year">2018</p>
+        </div>
+        <div>
+          <a href="#bus_rohit"><img class="img-circle" src="headshots/Rohit.jpg"/></a>
+          <p class="name">Rohit Jha</p>
+          <p class="role">Team Lead</p>
+          <p class="year">2017</p>
         </div>
       </div>
       <img id="top" src="misc/black_timeline_top.png" />
@@ -109,19 +129,19 @@
           </p>
           <div class="team-scroll">
             <div>
-              <a href="#elec_justin"><img class="img-circle" src="headshots/Justin.jpg"/></a>
-              <p class="name" style="color:white;">Justin Selig</p>
-              <p class="role">Team Lead</p>
-              <p class="year">2017</p>
-            </div>
-            <div>
               <a href="#elec_samir"><img class="img-circle" src="headshots/Samir.jpg"/></a>
               <p class="name" style="color:white;">Samir Durvasula</p>
+              <p class="role">Team Lead</p>
               <p class="year">2017</p>
             </div>
             <div>
               <a href="#elec_manish"><img class="img-circle" src="headshots/Manish.jpg"/></a>
               <p class="name" style="color:white;">Manish Patel</p>
+              <p class="year">2017</p>
+            </div>
+            <div>
+              <a href="#elec_justin"><img class="img-circle" src="headshots/Justin.jpg"/></a>
+              <p class="name" style="color:white;">Justin Selig</p>
               <p class="year">2017</p>
             </div>
             <div>
@@ -166,7 +186,7 @@
     <div id="bio" class="container subteam">
       <img id="bot" src="misc/black_timeline.png" />
       <p class="header" style="color:black; font-size:48px;">
-        Bio/Structural
+        Biological
       </p>
       <div class="bar"></div>
       <p style="text-align:justify; color:black;">
@@ -174,9 +194,14 @@
       </p>
       <div class="team-scroll">
         <div>
+          <a href="#bio_jenny"><img class="img-circle" src="headshots/Jenny.jpg"/></a>
+          <p class="name">Jenny DiPietro</p>
+          <p class="role">Team Lead</p>
+          <p class="year">2018</p>
+        </div>
+        <div>
           <a href="#bio_kate"><img class="img-circle" src="headshots/Kate.jpg"/></a>
           <p class="name">Kate Schole</p>
-          <p class="role">Team Lead</p>
           <p class="year">2017</p>
         </div>
         <div>
@@ -185,24 +210,9 @@
           <p class="year">2017</p>
         </div>
         <div>
-          <a href="#bio_julia"><img class="img-circle" src="headshots/Julia.jpg"/></a>
-          <p class="name">Julia Kelly</p>
-          <p class="year">2016</p>
-        </div>
-        <div>
-          <a href="#bio_fahmida"><img class="img-circle" src="headshots/Fahmida.jpg"/></a>
-          <p class="name">Fahmida Rashid</p>
-          <p class="year">2016</p>
-        </div>
-        <div>
           <a href="#bio_yan"><img class="img-circle" src="headshots/Yan.jpg"/></a>
           <p class="name">Yan Zhang</p>
           <p class="year">2017</p>
-        </div>
-        <div>
-          <a href="#bio_jenny"><img class="img-circle" src="headshots/Jenny.jpg"/></a>
-          <p class="name">Jenny DiPietro</p>
-          <p class="year">2018</p>
         </div>
         <div>
           <a href="#bio_george"><img class="img-circle" src="headshots/George.jpg"/></a>
@@ -216,18 +226,18 @@
       <div id="supreme" class="container subteam" style="background-image: url('temp2.jpg');">
       <img id="bot" src="misc/white_timeline_top.png" />
       <p class="header" style="color:#FFFFFF;">
-        Computer Science
+        Software
       </p>
       <div class="bar white"></div>
       <p style="text-align:justify; color:#FFFFFF;">
-        The Computer Science sub-team is comprised of computer and software engineering students who focus on creating the software components of the projects we work on. Members of the sub-team develop their skills in app-dev, data visualization, and full stack web development. In the past, this sub-team has collaborated with the electrical sub-team to create the web application and data network for the networked vital signs monitor, as well as software development for a video-based heart rate monitor. Each year, members develop coding and integration skills as they work to make web and app designs user-friendly and create smarter ways to sort data. 
+        The Computer Science sub-team is comprised of computer and software engineering students who focus on creating the software components of the projects we work on. Members of the sub-team develop their skills in app-dev, data visualization, and full stack web development. In the past, this sub-team has collaborated with the electrical sub-team to create the web application and data network for the networked vital signs monitor, as well as software development for a video-based heart rate monitor. Each year, members develop coding and integration skills as they work to make web and app designs user-friendly and create smarter ways to sort data.
       </p>
       <div class="team-scroll">
         <div>
-          <a href="#cs_peaky"><img class="img-circle" src="headshots/Peaky.jpg"/></a>
-          <p class="name" style="color:white;">Peaky Yuter</p>
+          <a href="#cs_annie"><img class="img-circle" src="headshots/Annie.jpg"/></a>
+          <p class="name" style="color:white;">Annie Tran</p>
           <p class="role">Team Lead</p>
-          <p class="year">2016</p>
+          <p class="year">2018</p>
         </div>
         <div>
           <a href="#cs_frank"><img class="img-circle" src="headshots/Frank.jpg"/></a>
@@ -237,11 +247,6 @@
         <div>
           <a href="#cs_erin"><img class="img-circle" src="headshots/Erin.jpg"/></a>
           <p class="name" style="color:white;">Erin Chen</p>
-          <p class="year">2018</p>
-        </div>
-        <div>
-          <a href="#cs_annie"><img class="img-circle" src="headshots/Annie.jpg"/></a>
-          <p class="name" style="color:white;">Annie Tran</p>
           <p class="year">2018</p>
         </div>
         <div>
@@ -264,14 +269,9 @@
       </p>
       <div class="team-scroll">
         <div>
-          <a href="#bus_kevia"><img class="img-circle" src="headshots/Kevia.jpg"/></a>
-          <p class="name">Kevia Qu</p>
-          <p class="role">Team Lead</p>
-          <p class="year">2016</p>
-        </div>
-        <div>
           <a href="#bus_rohit"><img class="img-circle" src="headshots/Rohit.jpg"/></a>
           <p class="name">Rohit Jha</p>
+          <p class="role">Team Lead</p>
           <p class="year">2017</p>
         </div>
         <div>
@@ -286,6 +286,22 @@
         </div>
       </div>
       <img id="top" src="misc/black_timeline_top.png" />
+    </div>
+    <div id="alumni-wrapper">
+      <div id="alumni" class="container subteam">
+        <img id="bot" src="misc/white_timeline_top.png" />
+        <p class="header" style="color:#FFFFFF; font-size:48px;">
+          Where We've Gone
+        </p>
+        <div class="bar white"></div>
+        <p style="text-align:justify; color:#FFFFFF;">
+          Alumni from EWH have gone to do great things after graduating. Team leads from previous years are listed below.
+        </p>
+        <div id="alumni-scroll">
+          <!-- templated -->
+        </div>
+        <img id="top" src="misc/white_timeline.png" />
+      </div>
     </div>
     <footer id="footer">
       <br>
@@ -307,25 +323,19 @@
           <div class="col-xs-6">
             <div class="row">
               <div class="col-sm-4">
-                <span class="foot-name">Kevia Qu</span>
-                <span class="foot-role">President</span>
-                <span class="foot-email">kq37@cornell.edu</span>
-              </div>
-              <div class="col-sm-4">
                 <span class="foot-name">Justin Selig</span>
-                <span class="foot-role">Vice President</span>
+                <span class="foot-role">Co-President</span>
                 <span class="foot-email">jss459@cornell.edu</span>
               </div>
               <div class="col-sm-4">
                 <span class="foot-name">Kate Schole</span>
-                <span class="foot-role">Team Lead</span>
+                <span class="foot-role">Co-President</span>
                 <span class="foot-email">kls289@cornell.edu</span>
               </div>
             </div>
           </div>
           <div class="col-xs-1"></div>
         </div>
-        
       </div>
     </footer>
   </div>
