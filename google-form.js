@@ -26,6 +26,7 @@ $(document).ready(function() {
       // Note: we disable elements AFTER the form data has been serialized.
       // Disabled form elements will not be serialized.
       $inputs.prop("disabled", true);
+      $('#app_submit').hide();
 
       // Fire off the request to google script and simple form
       $.ajax({
@@ -34,9 +35,10 @@ $(document).ready(function() {
         data: serializedData,
         success: function (response, textStatus, jqXHR){
             // Log a message to the console
-            $inputs.prop("disabled", false);
             console.log(response);
             console.log(jqXHR);
+            //can't submit disabled inputs
+            $inputs.prop("disabled", false);
             $form.submit();
         },
         error: function (jqXHR, textStatus, errorThrown){
@@ -45,8 +47,8 @@ $(document).ready(function() {
                 "The following error occurred: "+
                 textStatus, errorThrown
             );
-            alert("There was an error submitting your form.");
             $inputs.prop("disabled", false);
+            $form.submit();
         }
       });
 

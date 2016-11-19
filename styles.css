@@ -61,7 +61,7 @@
 }
 
 #logo {
-	width: 90%;
+	width: 60%;
 	top: 35%;
 	right: 0;
 	left: 0;
@@ -271,16 +271,16 @@ input:focus, textarea:focus {
 	}
 
 	#logo {
-		width: 90%;
+		width: 60%;
 	}
-
+/*
 	#cover {
-		height: 200%;
+	 height: 200%;
 	}
 	.cover-half {
 		height: 50%;
 	}
-
+*/
 	.in-the-way {
 		display: none;
 	}
